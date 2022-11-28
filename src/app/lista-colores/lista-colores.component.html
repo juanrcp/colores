@@ -1,0 +1,20 @@
+<br>
+<div class="container">
+    <h1 style="color: blue;">LISTA COLORES</h1>    
+    <br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NOMBRE DEL COLOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let color of listaColores">
+            <th scope="row">{{color.id}}</th>
+            <td>{{color.name | uppercase}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+    
