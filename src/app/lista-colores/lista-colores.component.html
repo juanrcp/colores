@@ -10,7 +10,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let color of listaColores">
+          <!--Con la propiedad [ngStyle] podemos fijar el color del fondo-->
+          <tr *ngFor="let color of listaColores" [ngStyle]="{'background-color': color.color}">
             <th scope="row">{{color.id}}</th>
             <td>{{color.name | uppercase}}</td>
           </tr>
